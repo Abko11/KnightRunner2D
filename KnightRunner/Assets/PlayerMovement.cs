@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;  //create a variable for jump (initially set flag to false since we don't want to always be jumping)
 
+    //public Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;  //Input class is for user input such as pressing arrow keys while "Horizontal specifies a value 1 or -1 based on which direction the player moves in (1 for right, -1 for left)
                                                                      //multiply by runSpeed so that it can factor into the player movement based on the input
+       // animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump")) //checking to see if user presses jump button
         {
