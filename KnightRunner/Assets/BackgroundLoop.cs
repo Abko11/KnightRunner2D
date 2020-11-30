@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//STILL NOT DONE (WATCH YOUTUBE VIDEO TO FINISH)
 public class BackgroundLoop : MonoBehaviour
 {
     //this script is for parallax scrolling
